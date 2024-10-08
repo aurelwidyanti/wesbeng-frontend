@@ -2,7 +2,7 @@ import React from 'react'
 import hero from '../assets/hero1.png'
 import logo from '../assets/Logo.png'
 
-export const Login = () => {
+const Login = () => {
   return (
     <div className='login flex  min-h-screen max-md:flex-col'>
         <div className="heroLogin bg-primary w-1/3 flex justify-center md:rounded-r-[30px] max-md:rounded-b-[30px] max-md:w-full max-md:h-[270px]">
@@ -43,3 +43,5 @@ export const Login = () => {
     </div>
   )
 }
+
+export default Login
