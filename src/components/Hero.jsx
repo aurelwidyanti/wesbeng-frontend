@@ -4,7 +4,7 @@ import heroImage from "../assets/img/background.png";
 const Hero = () => (
   <section
     className="hero bg-cover bg-center sm:h-screen flex justify-center items-center rounded-3xl sm:mx-12 sm:my-10"
-    style={{ backgroundImage: `url(${heroImage})`, height: "704px" }}
+    style={{ backgroundImage: `url(${heroImage})`, height: "712px" }}
   >
     <div className="flex flex-col sm:w-[1200px] sm:gap-8 text-white text-center">
       <h1 className="text-7xl font-bold">Wesbeng</h1>
