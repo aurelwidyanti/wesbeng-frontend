@@ -1,15 +1,12 @@
-import React from 'react';
-import logo from '../assets/img/logo.png';
+import React from "react";
+import logo from "../assets/img/logo.png";
 
 const Navbar = () => (
-  <header className="flex justify-between items-center p-5 bg-transparent text-white fixed w-full top-0 z-10">
-    {/* Logo on the left */}
-    <div className="flex items-center pl-9 pt-4">
+  <header className="flex justify-between items-center sm:px-16 sm:pt-12 bg-transparent text-white fixed w-full top-0 z-10">
+    <div className="flex items-center">
       <img src={logo} alt="Wesbeng Logo" className="h-12" />
     </div>
-
-    {/* Login button on the right */}
-    <button className="bg-black text-white py-2 px-6 rounded-full font-bold">
+    <button className="bg-white text-black sm:py-2 sm:px-10 rounded-full font-bold">
       Login
     </button>
   </header>
