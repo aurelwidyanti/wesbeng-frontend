@@ -1,18 +1,20 @@
-import React from 'react';
-import heroImage from '../assets/img/hero.png';
-
+import React from "react";
+import heroImage from "../assets/img/background.png";
 
 const Hero = () => (
   <section
-    className="hero bg-cover bg-center h-full flex justify-center items-center rounded-3xl mx-16 my-8"
-    style={{ backgroundImage: `url(${heroImage})` }}
+    className="hero bg-cover bg-center sm:h-screen flex justify-center items-center rounded-3xl sm:mx-12 sm:my-10"
+    style={{ backgroundImage: `url(${heroImage})`, height: "704px" }}
   >
-    <div className="bg-black bg-opacity-60 p-8 rounded-lg text-white text-center">
-      <h1 className="text-5xl font-bold mb-5">Wesbeng</h1>
-      <p className="text-lg max-w-lg mx-auto">
+    <div className="flex flex-col sm:w-[1200px] sm:gap-8 text-white text-center">
+      <h1 className="text-7xl font-bold">Wesbeng</h1>
+      <p className="text-2xl font-normal mx-auto">
         Solusi cerdas untuk pengelolaan sampah anorganik. Lihat jadwal
-        pengangkutan sampahmu, belajar cara daur ulang, dan dapatkan reward
-        menarik. Bergabunglah bersama kami untuk lingkungan yang lebih bersih!
+        pengangkutan sampahmu,
+        <br />
+        belajar cara daur ulang, dan dapatkan reward menarik.
+        <br />
+        Bergabunglah bersama kami untuk lingkungan yang lebih bersih!
       </p>
     </div>
   </section>
