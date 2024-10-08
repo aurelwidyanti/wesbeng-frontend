@@ -22,18 +22,18 @@ const Navbar = () => {
 
   return (
     <header
-      className={`flex justify-between items-center sm:px-16 sm:pt-12 fixed w-full top-0 z-10 transition-all duration-300 ${
+      className={`flex justify-between items-center px-4 py-4 sm:px-16 sm:pt-12 fixed w-full top-0 z-10 transition-all duration-300 ${
         isScrolled
           ? "bg-[#A0D683] shadow-md text-black"
           : "bg-transparent text-white"
       }`}
     >
       <div className="flex items-center">
-        <img src={logo} alt="Wesbeng Logo" className="h-12" />
+        <img src={logo} alt="Wesbeng Logo" className="h-8 sm:h-12" />
       </div>
 
       <button
-        className={`sm:py-2 sm:px-10 rounded-full font-bold transition-all duration-300 ${
+        className={`py-[6px] px-6 sm:py-2 sm:px-10 rounded-full font-bold transition-all duration-300 ${
           isScrolled ? "bg-[#2F5150] text-white" : "bg-white text-black"
         }`}
       >
