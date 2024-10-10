@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 import Logo from "./ui/Logo";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,13 +36,14 @@ const Navbar = () => {
         <Logo color="#fff" className="h-8 sm:h-12" />
       </div>
 
-      <button
+      <Link
+      to={'/login'}
         className={`py-[6px] px-6 sm:py-2 sm:px-10 rounded-full font-bold transition-all duration-300 ${
           isScrolled ? "bg-[#2F5150] text-white" : "bg-white text-black"
         }`}
       >
         Login
-      </button>
+      </Link>
     </header>
   );
 };
