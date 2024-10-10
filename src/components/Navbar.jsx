@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
+import Logo from "./ui/Logo";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center">
-        <img src={logo} alt="Wesbeng Logo" className="h-8 sm:h-12" />
+        <Logo color="#fff" className="h-8 sm:h-12" />
       </div>
 
       <button
