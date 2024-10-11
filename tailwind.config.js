@@ -9,6 +9,9 @@ export default {
       colors: {
         primary: '#A0D683',
       },
+      backgroundImage: {
+        'wave': "url('/src/assets/img/wave.svg')"
+      }
     },
   },
   plugins: [],
