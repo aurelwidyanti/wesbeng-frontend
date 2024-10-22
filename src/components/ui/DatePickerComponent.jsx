@@ -8,7 +8,7 @@ const DatePickerComponent = () => {
     return (
         <div>
         {/* <h1>Pilih Tanggal</h1> */}
-            <Calendar className="rounded-2xl shadow border-0 p-5 font-sans w-full"
+            <Calendar className="rounded-2xl shadow-md border-0 p-5 font-sans w-full"
             onChange={setDate}
             value={date}
             />
