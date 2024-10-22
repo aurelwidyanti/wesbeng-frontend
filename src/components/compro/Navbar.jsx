@@ -26,7 +26,9 @@ const Navbar = () => {
       className={`flex justify-between items-center px-4 py-4 sm:px-16 ${
         isScrolled ? "pt-4" : "pt-4 sm:pt-12"
       } fixed w-full top-0 z-10 transition-all duration-300 ${
-        isScrolled
+        window.location.pathname === "/dashboard"
+          ? "bg-[#A0D683] shadow-md text-black sm:pt-4"
+          : isScrolled
           ? "bg-[#A0D683] shadow-md text-black"
           : "bg-transparent text-white"
       }`}
@@ -36,12 +38,16 @@ const Navbar = () => {
       </div>
 
       <Link
-      to={'/login'}
+        to={window.location.pathname === "/dashboard" ? "/login" : "/login"}
         className={`py-[6px] px-6 sm:py-2 sm:px-10 rounded-full font-bold transition-all duration-300 ${
-          isScrolled ? "bg-[#2F5150] text-white" : "bg-white text-black"
+          window.location.pathname === "/dashboard"
+            ? "bg-[#2F5150] text-white"
+            : isScrolled
+            ? "bg-[#2F5150] text-white"
+            : "bg-white text-black"
         }`}
       >
-        Login
+        {window.location.pathname === "/dashboard" ? "Logout" : "Login"}
       </Link>
     </header>
   );
