@@ -1,5 +1,4 @@
-import React from "react";
-import heroImage from "../assets/img/background.png";
+import heroImage from "../../assets/img/background.png";
 
 import { useEffect, useState } from "react";
 

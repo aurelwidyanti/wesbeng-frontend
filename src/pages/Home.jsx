@@ -1,10 +1,9 @@
-import React from "react";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Features from "../components/Features";
-import Blog from "../components/Blog";
-import Footer from "../components/Footer";
-import Faq from "../components/Faq";
+import Hero from "../components/compro/Hero";
+import Navbar from "../components/compro/Navbar";
+import Features from "../components/compro/Features";
+import Blog from "../components/compro/Blog";
+import Footer from "../components/compro/Footer";
+import Faq from "../components/compro/Faq";
 
 const Home = () => {
   return (

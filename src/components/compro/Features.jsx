@@ -1,11 +1,7 @@
-import React from 'react'
 import { BsFillSendFill } from "react-icons/bs";
 import { FaHistory } from "react-icons/fa";
-import DatePickerComponent from './ui/DatePickerComponent';
+import DatePickerComponent from '../ui/DatePickerComponent';
 import { FaWallet } from "react-icons/fa";
-
-
-
 
 const Features = () => {
   return (
