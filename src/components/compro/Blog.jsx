@@ -5,7 +5,7 @@ import Card from "../ui/Card";
 
 const Blog = () => {
   return (
-    <div className="h-screen sm:h-[70vh] py-5">
+    <div className="h-screen sm:h-full w-full p-5">
       <Carousel className="flex items-cente" onSlideChange={(index) => console.log('onSlideChange()', index)}>
         <Card />
         <Card />
