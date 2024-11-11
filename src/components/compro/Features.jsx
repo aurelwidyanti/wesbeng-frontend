@@ -4,12 +4,12 @@ import CardFeatures from "../ui/CardFeatures";
 
 const Features = () => {
   return (
-    <div className="features flex-col p-5 pt-10 bg-gray-100">
-      <div className="flex flex-col p-3 gap-4">
+    <div className="features flex-col flex p-5 pt-10 bg-gray-100 sm:flex-row">
+      <div className="flex flex-col p-3 gap-4 sm:ml-16">
         <Balance />
         <DatePickerComponent />
       </div>
-      <div className="p-3">
+      <div className="p-3 my-auto">
         <CardFeatures
           tittle="Dompet Digital"
           text="Dompet Digital memberi insentif bagi warga yang aktif dalam daur

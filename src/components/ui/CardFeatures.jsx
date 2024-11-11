@@ -2,21 +2,22 @@ import { FaWallet } from "react-icons/fa";
 
 const CardFeatures = (props) => {
   return (
-    <div className="cardContent p-3 rounded-lg bg-primary/10 border-2 border-primary mt-2">
+    <div className="cardContent mt-3 p-3 rounded-lg bg-primary/10 border-2 border-primary sm:w-4/5 sm:mx-auto">
         <h3 className="font-bold text-second flex">
             <FaWallet className="mr-1 mt-1" /> {props.tittle}
         </h3>
         <p className="text-gray-500">
             {props.text}
         </p>
+        <p className="hidden text-gray-500 sm:flex">{props.desc}</p>
         <div
             id={props.idHeading}
-            className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300"
+            className="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300 sm:hidden"
             aria-labelledby={props.id}
             >
         <p className="text-gray-500 mt-2">{props.desc}</p>
         </div>
-        <p className="mt-2">
+        <p className="mt-2 sm:hidden">
             <button
                 type="button"
                 className="hs-collapse-toggle inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-primary decoration-2 disabled:opacity-50 disabled:pointer-events-none"
