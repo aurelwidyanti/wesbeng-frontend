@@ -14,14 +14,14 @@ const Features = () => {
           tittle="Dompet Digital"
           text="Dompet Digital memberi insentif bagi warga yang aktif dalam daur
             ulang."
-          desc="This is a collapse body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions."
+          desc="Dompet Digital adalah fitur yang memberikan insentif bagi warga yang aktif dalam pengumpulan sampah anorganik. Insentif tersebut berupa saldo yang dapat ditarik ke rekening bank. Saldo didapat dari hasil penjualan sampah anorganik yang telah dijual ke pihak ketiga (pengepul)."
           id="hs-show-hide-collapse"
           idHeading="hs-show-hide-collapse-heading"
         />
         <CardFeatures
           tittle="Kalender"
           text="Kalender adalah fitur yang menginformasikan jadwal pengangkutan sampah anorganik"
-          desc="This is a collapse body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions."
+          desc="Kalender adalah fitur yang memberikan informasi jadwal pengangkutan sampah anorganik. Jadwal pengangkutan sampah anorganik ini disesuaikan dengan jadwal pengangkutan sampah anorganik oleh pihak ketiga (pengepul). Dengan adanya kalender, warga dapat mengetahui kapan sampah anorganik akan diangkut. Terdapat notifikasi yang akan mengingatkan warga sebelum jadwal pengangkutan sampah anorganik."
           id="hs-show-hide-collapse2"
           idHeading="hs-show-hide-collapse-heading2"
           />
