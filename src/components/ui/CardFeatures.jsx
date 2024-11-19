@@ -6,7 +6,7 @@ const CardFeatures = (props) => {
         <h3 className="font-bold text-second flex">
             <FaWallet className="mr-1 mt-1" /> {props.tittle}
         </h3>
-        <p className="text-gray-500">
+        <p className="text-gray-500 mt-2">
             {props.text}
         </p>
         <p className="hidden text-gray-500 sm:flex">{props.desc}</p>
@@ -26,8 +26,8 @@ const CardFeatures = (props) => {
                 aria-controls={props.idHeading}
                 data-hs-collapse={`#${props.idHeading}`}
             >
-                <span className="hs-collapse-open:hidden">Read more</span>
-                <span className="hs-collapse-open:block hidden">Read less</span>
+                <span className="hs-collapse-open:hidden cursor-pointer">Read more</span>
+                <span className="hs-collapse-open:block hidden cursor-pointer">Read less</span>
                 <svg
                 className="hs-collapse-open:rotate-180 shrink-0 size-4"
                 xmlns="http://www.w3.org/2000/svg"
