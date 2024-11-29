@@ -10,36 +10,39 @@ const Faq = () => {
 
   const faqs = [
     {
-      title: "How do I order?",
-      desc: "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+        title: "Bagaimana cara menabung sampah?",
+        desc: "Untuk menabung sampah, Anda dapat memisahkan sampah organik dan anorganik di rumah. Setelah itu, bawa sampah anorganik yang dapat didaur ulang ke bank sampah Wesbeng. Tim kami akan menimbang dan mencatat nilai tabungan Anda berdasarkan berat dan jenis sampah yang disetorkan.",
     },
     {
-      title: "How can i make the payment?",
-      desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at.",
+        title: "Bagaimana cara mendapatkan penarikan saldo?",
+        desc: "Saldo tabungan sampah Anda dapat ditarik kapan saja sesuai dengan jumlah yang tersedia. Silakan kunjungi kantor bank sampah Wesbeng dan ajukan permohonan penarikan. Tim kami akan memproses penarikan saldo Anda dengan cepat.",
     },
     {
-      title: "How do I order?",
-      desc: "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+        title: "Apakah jenis sampah yang bisa ditabung?",
+        desc: "Jenis sampah yang dapat ditabung meliputi plastik, kertas, kaleng, kaca, dan logam lainnya yang dapat didaur ulang. Pastikan sampah dalam kondisi bersih dan kering sebelum disetorkan.",
     },
     {
-      title: "How can i make the payment?",
-      desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at.",
+        title: "Apakah ada biaya untuk menabung sampah?",
+        desc: "Tidak ada biaya untuk menabung sampah di bank sampah Wesbeng. Sebaliknya, Anda akan mendapatkan nilai tabungan berdasarkan berat dan jenis sampah yang disetorkan.",
     },
     {
-      title: "How do I order?",
-      desc: "We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+        title: "Bagaimana cara bergabung dengan bank sampah Wesbeng?",
+        desc: "Anda dapat bergabung dengan bank sampah Wesbeng dengan mendaftarkan diri melalui aplikasi Wesbeng atau datang langsung ke kantor kami. Tim kami akan membantu proses pendaftaran dan memberikan informasi lebih lanjut tentang cara kerja bank sampah.",
     },
     {
-      title: "How can i make the payment?",
-      desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at.",
+        title: "Apa manfaat menabung sampah di Wesbeng?",
+        desc: "Menabung sampah di Wesbeng membantu menjaga kebersihan lingkungan, mengurangi sampah yang berakhir di tempat pembuangan akhir, serta memberikan manfaat ekonomi melalui saldo tabungan yang dapat digunakan untuk berbagai keperluan.",
     },
-  ];
+];
+
+
 
   return (
     <div className="flex flex-col pt-12">
       <div className="faqHero text-center px-3">
-        <h2 className="font-bold text-4xl text-gray-700">Frequently asked questions</h2>
-        <p className="mt-4 text-gray-400">A lot of people don't appreciate the moment until it's passed. I'm not trying my hardest, and I'm not trying to do.</p>
+      <h2 className="font-bold text-4xl text-gray-700">Pertanyaan yang Sering Diajukan</h2>
+<p className="mt-4 text-gray-400">Banyak orang baru menyadari pentingnya menjaga lingkungan setelah terlambat. Mari kita mulai berkontribusi dari sekarang untuk masa depan yang lebih baik.</p>
+
       </div>
 
       <div className="faqContent flex flex-col gap-4 mt-8 px-3">
