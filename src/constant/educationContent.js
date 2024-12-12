@@ -1,7 +1,7 @@
 // educationContent.js
-import blog1 from '../assets/img/blog1.jpg';
-import blog2 from '../assets/img/blog2.jpg';
-import blog3 from '../assets/img/blog3.jpg';
+import blog1 from '../assets/img/img1.jpg';
+import blog2 from '../assets/img/img2.jpg';
+import blog3 from '../assets/img/img3.jpg';
 
 const blogData = [
   {

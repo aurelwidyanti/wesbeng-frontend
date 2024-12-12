@@ -40,9 +40,8 @@ const Faq = () => {
   return (
     <div className="flex flex-col pt-12">
       <div className="faqHero text-center px-3">
-      <h2 className="font-bold text-4xl text-gray-700">Pertanyaan yang Sering Diajukan</h2>
-<p className="mt-4 text-gray-400">Banyak orang baru menyadari pentingnya menjaga lingkungan setelah terlambat. Mari kita mulai berkontribusi dari sekarang untuk masa depan yang lebih baik.</p>
-
+        <h2 className="font-bold text-4xl text-gray-700">Pertanyaan yang Sering Diajukan</h2>
+        <p className="mt-4 text-gray-400">Banyak orang baru menyadari pentingnya menjaga lingkungan setelah terlambat. Mari kita mulai berkontribusi dari sekarang untuk masa depan yang lebih baik.</p>
       </div>
 
       <div className="faqContent flex flex-col gap-4 mt-8 px-3">

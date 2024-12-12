@@ -12,12 +12,12 @@ const Card = ({ image = dummyImage, title = "Default Title", text = "Default tex
     return (
         // row card
         <div className="flex flex-wrap justify-center items-center ">
-            <div className="m-auto mt-16 sm:mt-5 sm:h-5/6 sm:w-[90%] mb-11">
-                <div className="flex flex-col border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden sm:flex-row">
-                    <img className="w-full sm:w-2/5 h-48 sm:h-auto object-cover object-center" src={image} alt="blog" />
-                    <div className="p-6 sm:w-2/3">
-                        <h1 className="title-font text-4xl sm:text-6xl font-medium text-gray-900 mb-4 mt-10">{title}</h1>
-                        <p className={`leading-relaxed mb-3 text-base sm:text-lg text-justify ${isExpanded ? '' : 'line-clamp-3'}`}>
+            <div className="m-auto mt-5 sm:mt-5 sm:h-5/6 sm:w-[90%] mb-11">
+                <div className="flex flex-col border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden sm:flex-row p-4 shadow-sm bg-white">
+                    <img className="w-full sm:rounded-l-md rounded-t-md sm:rounded-r-none sm:w-2/5 sm:h-80 h-48 object-cover object-center" src={image} alt="blog" />
+                    <div className="sm:px-6 sm:w-2/3 flex flex-col justify-center">
+                        <h1 className="title-font text-2xl sm:text-4xl font-bold text-gray-700 mb-2">{title}</h1>
+                        <p className={`leading-relaxed mb-3 text-gray-600 text-base sm:text-lg text-justify ${isExpanded ? '' : 'line-clamp-3'}`}>
                             {text}
                         </p>
                         <div className="flex items-center flex-wrap">
