@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import dummyImage from '../../assets/img/dummy-image.png';
+// import dummyImage from '../../assets/img/dummy-image.png';
 
-const Card = ({ image = dummyImage, title = "Default Title", text = "Default text content." }) => {
+const Card = ({ blog }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleReadMore = () => {
@@ -14,11 +14,11 @@ const Card = ({ image = dummyImage, title = "Default Title", text = "Default tex
         <div className="flex flex-wrap justify-center items-center ">
             <div className="m-auto mt-5 sm:mt-5 sm:h-5/6 sm:w-[90%] mb-11">
                 <div className="flex flex-col border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden sm:flex-row p-4 shadow-sm bg-white">
-                    <img className="w-full sm:rounded-l-md rounded-t-md sm:rounded-r-none sm:w-2/5 sm:h-80 h-48 object-cover object-center" src={image} alt="blog" />
-                    <div className="sm:px-6 sm:w-2/3 flex flex-col justify-center">
-                        <h1 className="title-font text-2xl sm:text-4xl font-bold text-gray-700 mb-2">{title}</h1>
+                    <img className="w-full sm:rounded-l-md rounded-t-md sm:rounded-r-none sm:w-2/5 sm:h-80 h-48 object-cover object-center" src={blog.image} alt="blog" />
+                    <div className="sm:px-6 sm:w-2/3 flex flex-col justify-start">
+                        <h1 className="title-font text-2xl sm:text-4xl font-bold text-gray-700 mb-2">{blog.title}</h1>
                         <p className={`leading-relaxed mb-3 text-gray-600 text-base sm:text-lg text-justify ${isExpanded ? '' : 'line-clamp-3'}`}>
-                            {text}
+                            {blog.content}
                         </p>
                         <div className="flex items-center flex-wrap">
                             <button onClick={handleReadMore} className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
@@ -37,9 +37,7 @@ const Card = ({ image = dummyImage, title = "Default Title", text = "Default tex
 };
 
 Card.propTypes = {
-    image: PropTypes.string,
-    title: PropTypes.string,
-    text: PropTypes.string,
+    blog: PropTypes.object.isRequired,
 };
 
 export default Card;

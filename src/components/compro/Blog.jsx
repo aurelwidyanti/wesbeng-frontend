@@ -1,8 +1,29 @@
 import { Carousel } from "flowbite-react";
 import Card from "../ui/Card";
 import blogData from "../../constant/educationContent"
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Blog = () => {
+  // const [blogData, setBlogData] = useState([])
+
+  // const fetchBlog = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       "http://localhost:8000/api/v1/education-contents"
+  //     )
+  //     console.log(response.data)
+
+  //     setBlogData(response.data.data)     
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   fetchBlog()
+  // }, [])
+
   return (
     <div className="sm:h-full w-full p-5 mt-11 bg-gray-100">
       <div className="faqHero text-center px-3">
@@ -13,9 +34,7 @@ const Blog = () => {
         {blogData.map((blog, index) => (
           <Card 
             key={index}
-            image={blog.image}
-            title={blog.title}
-            text={blog.text}
+            blog={blog}
           />
         ))}
       </Carousel>
