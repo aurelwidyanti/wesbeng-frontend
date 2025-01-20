@@ -1,25 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
+import preline from "preline/plugin";
 
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-     flowbite.content(),
-    'node_modules/preline/dist/*.js',
+    flowbite.content,
+    "node_modules/preline/dist/*.js",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#A0D683',
-        second: '#679369',
+        primary: "#A0D683",
+        second: "#679369",
       },
       backgroundImage: {
-        'wave': "url('/src/assets/img/wave.svg')"
-      }
+        wave: "url('/src/assets/img/wave.svg')",
+      },
     },
   },
-  plugins: [
-    require('preline/plugin'),flowbite.plugin(),
-  ],
-}
+  plugins: [preline, flowbite.plugin],
+};
